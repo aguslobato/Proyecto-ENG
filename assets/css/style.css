@@ -1,8 +1,14 @@
 /* font-family: "Montserrat", sans-serif; */
 
+body{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 0.875rem;
+}
 /* LINKS */
 .link-black{
-    font-family: "Montserrat", sans-serif;
     color: black;
     text-decoration: none;
     transition: all 0.8s;
@@ -13,7 +19,6 @@
     text-decoration: underline;
 }
 .link-bg-blue{
-    font-family: "Montserrat", sans-serif;
     color: white;
     text-decoration: none;
     transition: all 0.8s;
@@ -35,11 +40,9 @@
     text-decoration: none;
 }
 .link-outline-white:hover{
-    transition: all 0.8s;
-    background-color: white;
-    color: #0055B9;
+    transition: all 0.5s;
+    opacity: 0.6;
 }
-
 .link-white{
     color: white;
     text-decoration: none;
@@ -48,6 +51,15 @@
 .link-white:hover{
     transition: all 0.8s;
     text-decoration: underline;
+}
+.link-underline-black{
+    color: black;
+    font-weight: 500;
+}
+
+
+.fw-medium{
+    font-weight: 600;
 }
 
 
@@ -58,10 +70,19 @@ header .border-bottom{
     border-bottom: 1px solid #ccc;
     padding: 20px 0;
 }
-
+.dropdown-menu.show{
+    width: 100vh;
+    position: relative;
+    left: 0;
+}
+.content-icon{
+    margin: 10px 0;
+}
+.content-icon > *{
+    display: inline-block;
+}
 .icon-small{
     width: 24px;
-    margin: 8px;
 }
 
 footer{
@@ -78,6 +99,42 @@ footer ul li{
     margin-bottom: 10px;
 }
 footer .content-icons li{
+    margin-bottom: 0;
     display: inline-block;
     margin-right: 15px;
+}
+.accordion-button:not(.collapsed){
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+.accordion-item{
+    background-color: transparent;
+    border: none;
+}
+.accordion-button{
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    margin: 15px 0;
+}
+.accordion-body{
+    padding: 0;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+     border-top-left-radius: 0; 
+     border-top-right-radius: 0; 
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/arrow-footer.png);
+}
+.accordion-button::after {
+    background-image: url(../images/arrow-footer.png);
+}
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+     border-bottom-right-radius: 0;
+     border-bottom-left-radius: 0;
+}
+.accordion-button:focus {
+    box-shadow: none;
 }
