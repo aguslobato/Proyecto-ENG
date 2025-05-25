@@ -115,7 +115,7 @@ header .nav-link{
     display: inline-block;
     align-items: center;
 }
-.content-icon h6{
+.content-icon a{
     font-size: 0.8rem;
     width: 70%;
     margin: 0;
@@ -141,7 +141,7 @@ footer ul li{
     list-style: none;
     margin-bottom: 10px;
 }
-footer .content-icons li{
+footer .icons-footer li{
     margin-bottom: 0;
     display: inline-block;
     margin-right: 15px;
