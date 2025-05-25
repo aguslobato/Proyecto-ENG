@@ -54,7 +54,6 @@ p{
 }
 .link-underline-black{
     color: black;
-    font-weight: 500;
 }
 
 
@@ -70,16 +69,60 @@ header .border-bottom{
     border-bottom: 1px solid #ccc;
     padding: 20px 0;
 }
-.dropdown-menu.show{
-    width: 100vh;
+header .nav-link{
+    padding: 0;
+    margin: 0;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.nav-menu .border-left{
+    border-left: 1px solid #DCDCDC;
+}
+.nav-menu{
     position: relative;
-    left: 0;
+    width: 100%;
+}
+.nav-menu > ul{
+    position: relative;
+    z-index: 4000;
+}
+.dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center {
+	width: auto;
+	display: inline-block;
+	float: left;
+}
+.dropdown-menu.show {
+    padding: 2em;
+	width: 1320px;
+	z-index: 8000;
+	position: absolute;
+	inset: 0px auto auto 0px;
+	margin: 0px;
+	transform: translate3d(0px, 42px, 0px);
+}
+.nav-menu p{
+    font-size: 0.8;
+}
+.nav-menu h4{
+    font-weight: 400;
 }
 .content-icon{
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 .content-icon > *{
     display: inline-block;
+    align-items: center;
+}
+.content-icon h6{
+    font-size: 0.8rem;
+    width: 70%;
+    margin: 0;
+}
+.icon-navbar{
+    width: 56px;
+    margin-right: 10px;
 }
 .icon-small{
     width: 24px;
