@@ -145,11 +145,15 @@ header .nav-link{
 .nav-menu p{
     font-size: 0.8;
 }
-.nav-menu h4{
+.nav-links h4{
     font-weight: 400;
+    font-size: 1.4rem;
+}
+.content-submenu p{
+    margin: 10px 0;
 }
 .content-icon{
-    margin: 20px 0;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
 }
@@ -228,6 +232,12 @@ footer .icons-footer li{
     margin-bottom: 0;
     display: inline-block;
     margin-right: 15px;
+}
+footer .link-outline-white{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+    padding: 7px 25px;
 }
 .accordion-btn{
     background-color: transparent;
