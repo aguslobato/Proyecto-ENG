@@ -34,7 +34,7 @@
                         <a href=""><img src="assets/images/Logo-desktop.svg" class="logo" alt=""></a>
                     </div>
                     <div class="col align-self-center text-end">
-                        <a href="" class="link-black">Careers</a>
+                        <a href="" class="link-black">Careers <img src="assets/images/Arrow-circle.svg" class="icon-small" alt=""></a>
                         <a href="" class="link-black">Contact us</a>
                         <a href="" class="link-bg-blue">Instant estimate</a>
                     </div>
@@ -45,7 +45,7 @@
             <nav class="navbar">
                 <ul class="nav-links">
                     <li class="dropdown">
-                        <a class="link-black" href="#" onclick="toggleDropdown(event)">BIM Servicies</a>
+                        <a class="link-black" href="#" onclick="toggleDropdown(event)">BIM Servicies <img class="arrow icon-small" src="assets/images/arrow-header.png" alt=""></a>
                         <div class="dropdown-menu">
                             <div class="row content-submenu">
                                 <div class="col-12 col-xl-8">
@@ -113,7 +113,7 @@
                         </div>
                   </li>
                     <li class="dropdown">
-                        <a class="link-black" href="#" onclick="toggleDropdown(event)">Solutions for</a>
+                        <a class="link-black" href="#" onclick="toggleDropdown(event)">Solutions for<img class="arrow icon-small" src="assets/images/arrow-header.png" alt=""></a>
                         <div class="dropdown-menu">
                             <div class="row content-submenu">
                                 <div class="col-12 col-xl-8">
@@ -181,7 +181,7 @@
                         </div>
                   </li>
                   <li class="dropdown">
-                    <a class="link-black" href="#" onclick="toggleDropdown(event)">Portfolio</a>
+                    <a class="link-black" href="#" onclick="toggleDropdown(event)">Portfolio<img class="arrow icon-small" src="assets/images/arrow-header.png" alt=""></a>
                     <div class="dropdown-menu">
                         <div class="row content-submenu">
                             <div class="col-12 col-xl-8">
@@ -252,7 +252,7 @@
               <li><a class="link-black" href="#">BIM Blog</a></li>
                 <li><a class="link-black" href="#">Contact</a></li>
               <li class="dropdown">
-                <a class="link-black" href="#" onclick="toggleDropdown(event)">Company</a>
+                <a class="link-black" href="#" onclick="toggleDropdown(event)">Company<img class="arrow icon-small" src="assets/images/arrow-header.png" alt=""></a>
                 <div class="dropdown-menu">
                     <div class="row content-submenu">
                         <div class="col-12 col-xl-8">
@@ -329,7 +329,7 @@
 
     </header>
 
-    <div class="container">
+    <section class="container">
   <!-- Swiper -->
   <div class="swiper mySwiper mt-4 mb-4">
     <div class="swiper-wrapper">
@@ -433,11 +433,16 @@
         </div>
       </div>
     </div>        
-    <div class="swiper-button-next"><img src="assets/images/Arrow-circle.svg" alt=""></div>
-    <div class="swiper-button-prev"><img src="assets/images/Arrow-circle.svg" alt=""></div>
     <div class="swiper-pagination"></div>
   </div>        
+    </section>
+    <div class="arrows-navegation container-xxl">
+        <div class="swiper-button-next"><img src="assets/images/Arrow-circle.svg" alt=""></div>
+        <div class="swiper-button-prev"><img src="assets/images/Arrow-circle.svg" alt=""></div>
     </div>
+    
+
+
 
 
     <footer>
@@ -471,8 +476,10 @@
                 </div>
             </div>
             <div class="accordion-container mt-5 mb-5">
-                <button class="accordion-btn" onclick="toggleAccordion()">BIM Solutions in Key States</button>
-                <div class="accordion-content" id="accordionContent">
+                <button class="accordion-btn" onclick="toggleAccordion()">BIM Solutions in Key States
+                    <img class="arrow arrowIcon" src="assets/images/arrow-footer.png" alt="" id="arrowIcon">
+                </button>
+                <div class="accordion-content mt-4" id="accordionContent">
                     <div class="row">
                         <div class="col-12 col-lg-4 mt-3 mb-3">
                             <ul>

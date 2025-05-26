@@ -49,7 +49,12 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-  function toggleAccordion() {
-    const content = document.getElementById("accordionContent");
-    content.classList.toggle("show");
-  }
+      function toggleAccordion() {
+      const content = document.getElementById("accordionContent");
+      const arrow = document.getElementById("arrowIcon");
+      const arrowHeader = document.getElementById("arrowHeader");
+
+      content.classList.toggle("show");
+      arrow.classList.toggle("rotated");
+      arrowHeader.classList.toggle("rotated");
+    }

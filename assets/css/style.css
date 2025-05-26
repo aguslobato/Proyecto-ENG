@@ -74,10 +74,10 @@ header .border-bottom{
     border-bottom: 1px solid #ccc;
     padding: 15px 0;
 }
-header .nav-link{
+header .link-black{
     padding: 0;
     margin: 0;
-    margin-right: 40px;
+    margin-right: 30px;
     margin-top: 20px;
 }
 .navbar{
@@ -89,10 +89,19 @@ header .nav-link{
     margin: 0;
     padding: 2em 0;
 }
+header .icon-small{
+    width: 20px;
+    margin-left: 5px;
+}
+.nav-links li{
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 0;
+}
 .nav-links a {
     text-decoration: none;
     color: black;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 .dropdown-menu {
     display: none;
@@ -120,16 +129,6 @@ header .nav-link{
     max-width: 1200px;
     margin: auto;
     gap: 2rem;
-}
-.column {
-    flex: 1;
-}
-.column ul {
-    padding: 0;
-    list-style: none;
-}
-.column li {
-    margin-bottom: 1rem;
 }
 .navbar .border-left{
     border-left: 1px solid #DCDCDC;
@@ -180,6 +179,10 @@ header .nav-link{
     max-width: 1320px;
     width: 1320px;
 }
+.arrows-navegation{
+    position: relative;
+    top: -150px;
+}
 .card-slider{
     border: 1px solid #062F65;
     border-radius: 20px;
@@ -205,6 +208,9 @@ header .nav-link{
     transform: rotate(180deg);
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: none !important;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: none !important;
 }
 .card-slider h6{
@@ -240,6 +246,9 @@ footer .link-outline-white{
     padding: 7px 25px;
 }
 .accordion-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     background-color: transparent;
     color: white;
     border: none;
@@ -259,7 +268,13 @@ footer .link-outline-white{
 .accordion-content.show {
     display: block;
 }
-
+.arrow {
+    transition: transform 0.3s ease;
+    width: 32px;
+  }
+  .arrow.rotated {
+    transform: rotate(180deg);
+  }
 
 
 
