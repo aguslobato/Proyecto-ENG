@@ -3,6 +3,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
+    margin: 0;
 }
 p{
     font-size: 0.875rem;
@@ -120,8 +121,10 @@ header .icon-small{
 	z-index: 8000;
 	position: absolute;
     inset: 100px auto auto 250px;
-	margin: 0px;
+	margin: 0;
 	transform: translate3d(0px, 50px, 0px);
+    left: 50%;
+    transform: translateX(-50%) translateY(50px);
 }
 .mega-content {
     display: flex;
@@ -142,7 +145,7 @@ header .icon-small{
     z-index: 4000;
 }
 .nav-menu p{
-    font-size: 0.8;
+    font-size: 0.8rem;
 }
 .nav-links h4{
     font-weight: 400;
@@ -175,30 +178,29 @@ header .icon-small{
 .card-slider-content{
     padding:0 1em;
 }
-.swiper-wrapper{
-    max-width: 1320px;
-    width: 1320px;
-}
 .arrows-navegation{
     position: relative;
     top: -150px;
+}
+.slider .container{
+    width: auto;
 }
 .card-slider{
     border: 1px solid #062F65;
     border-radius: 20px;
     display: flex;
-    align-items: top;
+    align-items: start;
     height: 100%;
     min-height: 200px;
     width: 100%;
     padding: 2em 0;
     justify-content: center;
 }
-.swiper-slide {
+.swiper-slide{
     font-size: 18px;
     width: 500px;
 }
-.swiper-slide img {
+.swiper-slide img{
     display: block;
     width: 64px;
     height: 64px;
@@ -210,7 +212,7 @@ header .icon-small{
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
     content: none !important;
 }
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
     content: none !important;
 }
 .card-slider h6{
@@ -259,25 +261,22 @@ footer .link-outline-white{
 .accordion-btn:hover{
     cursor: pointer;
 }
-.accordion-container {
+.accordion-container{
     margin: 2rem 0;
 }
-.accordion-content {
+.accordion-content{
     display: none;
 }
-.accordion-content.show {
+.accordion-content.show{
     display: block;
 }
-.arrow {
+.arrow{
     transition: transform 0.3s ease;
     width: 32px;
-  }
-  .arrow.rotated {
+}
+.arrow.rotated{
     transform: rotate(180deg);
-  }
-
-
-
+}
 .text-center{
     text-align: center;
 }
@@ -285,19 +284,34 @@ footer .link-outline-white{
     text-align: end;
 }
 
+.container {
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+/*Esto es para centrar los container*/
 
 
-
-
-
-@media (max-width: 450px) {
+@media (max-width: 450px){
     footer .icons-footer{
+        width: max-content;
         display: flex;
-        justify-content: space-evenly;
+    }
+    footer .icons-footer li{
+        width: 100%;
+    }
+    footer .icons-footer .link-outline-white{
+        display: flex;
+        justify-content: center;
+    }
+    footer .container{
+        width: auto;
     }
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1320px){
      header{
         display: block;
         margin: 0;
