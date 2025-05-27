@@ -273,6 +273,7 @@ footer .link-outline-white{
 .arrow{
     transition: transform 0.3s ease;
     width: 32px;
+    height: 100%;
 }
 .arrow.rotated{
     transform: rotate(180deg);
@@ -283,9 +284,8 @@ footer .link-outline-white{
 .text-end{
     text-align: end;
 }
-
 .container {
-    width: 100%;
+    width: auto;
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-right: auto;
@@ -294,9 +294,8 @@ footer .link-outline-white{
 /*Esto es para centrar los container*/
 
 
-@media (max-width: 450px){
+@media (max-width: 500px){
     footer .icons-footer{
-        width: max-content;
         display: flex;
     }
     footer .icons-footer li{
@@ -305,9 +304,6 @@ footer .link-outline-white{
     footer .icons-footer .link-outline-white{
         display: flex;
         justify-content: center;
-    }
-    footer .container{
-        width: auto;
     }
 }
 
