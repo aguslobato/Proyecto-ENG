@@ -25,7 +25,7 @@ p{
     transition: all 0.8s;
     background-color: #0055B9;
     border: 1px solid transparent;
-    padding: 13px 20px;
+    padding: 13px 36px;
     border-radius: 40px;
 }
 .link-bg-blue:hover{
@@ -80,6 +80,17 @@ header .link-black{
     margin: 0;
     margin-right: 30px;
     margin-top: 20px;
+}
+.icon-small-header{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+header .icon-small-nav{
+    width: 12px;
+    margin-left: 5px;
 }
 .navbar{
     display: flex;
@@ -186,7 +197,7 @@ header .icon-small{
     width: auto;
 }
 .card-slider{
-    border: 1px solid #062F65;
+    border: 2px solid #0056D7;
     border-radius: 20px;
     display: flex;
     align-items: start;
@@ -249,14 +260,14 @@ footer .link-outline-white{
 }
 .accordion-btn{
     display: flex;
-    justify-content: space-between;
     width: 100%;
     background-color: transparent;
     color: white;
     border: none;
     box-shadow: none;
     padding: 0;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-weight: 600;
 }
 .accordion-btn:hover{
     cursor: pointer;
@@ -270,10 +281,19 @@ footer .link-outline-white{
 .accordion-content.show{
     display: block;
 }
-.arrow{
-    transition: transform 0.3s ease;
-    width: 32px;
+footer .arrow{
+    transition: transform 0.8s ease;
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+    width: 14px;
     height: 100%;
+}
+footer .arrow-small{
+    width: 15px;
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
 }
 .arrow.rotated{
     transform: rotate(180deg);
