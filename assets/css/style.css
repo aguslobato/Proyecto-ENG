@@ -126,9 +126,9 @@ header .icon-small{
     z-index: 10;
 }
 .dropdown-menu.show {
-    display: block;
-    padding: 2em;
-	width: 1320px;
+    display:flex;
+    justify-content: center;
+	width: 100%;
 	z-index: 8000;
 	position: absolute;
     inset: 100px auto auto 250px;
@@ -136,6 +136,10 @@ header .icon-small{
 	transform: translate3d(0px, 50px, 0px);
     left: 50%;
     transform: translateX(-50%) translateY(50px);
+}
+.dropdown-menu.show .row{
+    margin: 0;
+    justify-content: center;
 }
 .mega-content {
     display: flex;
@@ -161,6 +165,9 @@ header .icon-small{
 .nav-links h4{
     font-weight: 400;
     font-size: 1.4rem;
+}
+.content-submenu{
+    width: 1320px;
 }
 .content-submenu p{
     margin: 10px 0;
