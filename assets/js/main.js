@@ -62,3 +62,23 @@ var swiper = new Swiper(".mySwiper", {
       arrow.classList.toggle("rotated");
       arrowHeader.classList.toggle("rotated");
     }
+
+
+
+
+    function cerrarModal() {
+      document.getElementById("miModal").style.display = "none";
+    }
+
+    function cerrarModalPublicity() {
+  const publicity = document.getElementById("miModalPublicity");
+
+  // Forzamos un reflow para que el navegador registre el cambio de clase
+  publicity.classList.add("ocultando-publicity");
+  void publicity.offsetWidth; // ⬅️ esto es CLAVE
+
+  // Esperamos 600ms (igual que en la transición CSS)
+  setTimeout(() => {
+    publicity.style.display = "none";
+  }, 600);
+}
